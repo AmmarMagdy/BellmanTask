@@ -118,7 +118,7 @@
     </objects>
     <designables>
         <designable name="pHS-GJ-SnX">
-            <size key="intrinsicContentSize" width="46" height="33"/>
+            <size key="intrinsicContentSize" width="46" height="23"/>
         </designable>
     </designables>
     <resources>

@@ -70,11 +70,11 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets  {
-        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        return UIEdgeInsets(top: 10, left: 5, bottom: 20, right: 5)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
@@ -83,7 +83,7 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         let width  = collectionView.bounds.width
         let height = view.bounds.height
         
-        return CGSize.init(width: width * 0.9, height: height * 0.3)
+        return CGSize.init(width: width * 0.95, height: height * 0.28)
         
     }
     

@@ -28,6 +28,7 @@
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big_header" translatesAutoresizingMaskIntoConstraints="NO" id="XZW-LY-5Mt">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="189.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKs-EC-yTH">
                                     <rect key="frame" x="0.0" y="44" width="331" height="57"/>
@@ -174,7 +175,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="IKs-EC-yTH" firstAttribute="leading" secondItem="TCH-Ow-BaH" secondAttribute="leading" id="022-8D-HsF"/>
                                 <constraint firstItem="aDp-n9-9pS" firstAttribute="top" secondItem="IKs-EC-yTH" secondAttribute="top" id="7L3-54-Jjw"/>
@@ -194,7 +195,7 @@
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lHR-rf-pdo">
-                            <rect key="frame" x="10" y="189.5" width="394" height="672.5"/>
+                            <rect key="frame" x="5" y="189.5" width="404" height="672.5"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MNk-vh-1Vf">
                                 <size key="itemSize" width="128" height="128"/>
@@ -208,7 +209,7 @@
                             </connections>
                         </collectionView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="lHR-rf-pdo" firstAttribute="top" secondItem="TCH-Ow-BaH" secondAttribute="bottom" id="A4r-U7-ioY"/>
                         <constraint firstItem="TCH-Ow-BaH" firstAttribute="leading" secondItem="UhW-Pz-3Hg" secondAttribute="leading" id="AuH-aT-d4B"/>
@@ -216,8 +217,8 @@
                         <constraint firstAttribute="bottom" secondItem="lHR-rf-pdo" secondAttribute="bottom" id="RBD-Bb-aEe"/>
                         <constraint firstItem="TCH-Ow-BaH" firstAttribute="top" secondItem="UhW-Pz-3Hg" secondAttribute="top" id="XcF-a9-ZRL"/>
                         <constraint firstAttribute="trailing" secondItem="TCH-Ow-BaH" secondAttribute="trailing" id="dQE-iL-vyP"/>
-                        <constraint firstAttribute="trailing" secondItem="lHR-rf-pdo" secondAttribute="trailing" constant="10" id="gUZ-hp-6UM"/>
-                        <constraint firstItem="lHR-rf-pdo" firstAttribute="leading" secondItem="UhW-Pz-3Hg" secondAttribute="leading" constant="10" id="gaR-aC-jQJ"/>
+                        <constraint firstAttribute="trailing" secondItem="lHR-rf-pdo" secondAttribute="trailing" constant="5" id="gUZ-hp-6UM"/>
+                        <constraint firstItem="lHR-rf-pdo" firstAttribute="leading" secondItem="UhW-Pz-3Hg" secondAttribute="leading" constant="5" id="gaR-aC-jQJ"/>
                     </constraints>
                 </view>
             </subviews>

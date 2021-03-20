@@ -194,8 +194,8 @@
 		A0E0EDBA26062CA400AB2066 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A0E0EDC226062EA700AB2066 /* HorizontalCategoryCell */,
 				A0E0EDC426062EE900AB2066 /* HomeHeaderCell */,
+				A0E0EDC226062EA700AB2066 /* HorizontalCategoryCell */,
 				A0E0EDCC2606546100AB2066 /* HotspotsCollectionCell */,
 			);
 			path = View;
