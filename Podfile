@@ -6,5 +6,9 @@ target 'BellmanTask' do
   use_frameworks!
 
   # Pods for BellmanTask
+  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'SnapKit'
+  pod 'Material'
 
 end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,20 @@
 		A0E0ED062606180800AB2066 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED052606180800AB2066 /* ViewController.swift */; };
 		A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0A2606180A00AB2066 /* Assets.xcassets */; };
 		A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0C2606180A00AB2066 /* LaunchScreen.storyboard */; };
+		A0E0ED5826061DA100AB2066 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED2326061DA100AB2066 /* UIImageView+Extension.swift */; };
+		A0E0ED5A26061DA100AB2066 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED2526061DA100AB2066 /* UIColor+Extension.swift */; };
+		A0E0ED5E26061DA100AB2066 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED2926061DA100AB2066 /* UIView+Extension.swift */; };
+		A0E0ED6026061DA100AB2066 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED2B26061DA100AB2066 /* UIViewController+Extension.swift */; };
+		A0E0ED6126061DA100AB2066 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED2C26061DA100AB2066 /* UITextField+Extension.swift */; };
+		A0E0ED6326061DA100AB2066 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED2F26061DA100AB2066 /* Constant.swift */; };
+		A0E0ED6626061DA100AB2066 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED3226061DA100AB2066 /* Language.swift */; };
+		A0E0ED6F26061DA100AB2066 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED3F26061DA100AB2066 /* ActivityIndicator.swift */; };
+		A0E0ED7E26061DA100AB2066 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5126061DA100AB2066 /* CustomView.swift */; };
+		A0E0ED7F26061DA100AB2066 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5226061DA100AB2066 /* CustomButton.swift */; };
+		A0E0ED8026061DA100AB2066 /* ShadowViewimg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5326061DA100AB2066 /* ShadowViewimg.swift */; };
+		A0E0ED8126061DA100AB2066 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5426061DA100AB2066 /* CustomTextField.swift */; };
+		A0E0ED8226061DA100AB2066 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5526061DA100AB2066 /* CustomTextView.swift */; };
+		A0E0ED8326061DA100AB2066 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5626061DA100AB2066 /* CustomLabel.swift */; };
 		C8120D057ED7E856188A9FED /* Pods_BellmanTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +37,20 @@
 		A0E0ED0A2606180A00AB2066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E0ED0D2606180A00AB2066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0E0ED0F2606180A00AB2066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E0ED2326061DA100AB2066 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		A0E0ED2526061DA100AB2066 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A0E0ED2926061DA100AB2066 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A0E0ED2B26061DA100AB2066 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A0E0ED2C26061DA100AB2066 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		A0E0ED2F26061DA100AB2066 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A0E0ED3226061DA100AB2066 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		A0E0ED3F26061DA100AB2066 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A0E0ED5126061DA100AB2066 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		A0E0ED5226061DA100AB2066 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A0E0ED5326061DA100AB2066 /* ShadowViewimg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowViewimg.swift; sourceTree = "<group>"; };
+		A0E0ED5426061DA100AB2066 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A0E0ED5526061DA100AB2066 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		A0E0ED5626061DA100AB2066 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellmanTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,6 +104,9 @@
 		A0E0ED002606180800AB2066 /* BellmanTask */ = {
 			isa = PBXGroup;
 			children = (
+				A0E0ED1F26061D1E00AB2066 /* UI */,
+				A0E0ED2D26061DA100AB2066 /* Utilis */,
+				A0E0ED2126061DA100AB2066 /* Extensions */,
 				A0E0ED012606180800AB2066 /* AppDelegate.swift */,
 				A0E0ED052606180800AB2066 /* ViewController.swift */,
 				A0E0ED0A2606180A00AB2066 /* Assets.xcassets */,
@@ -83,6 +114,49 @@
 				A0E0ED0F2606180A00AB2066 /* Info.plist */,
 			);
 			path = BellmanTask;
+			sourceTree = "<group>";
+		};
+		A0E0ED1F26061D1E00AB2066 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A0E0ED2126061DA100AB2066 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0E0ED2326061DA100AB2066 /* UIImageView+Extension.swift */,
+				A0E0ED2526061DA100AB2066 /* UIColor+Extension.swift */,
+				A0E0ED2926061DA100AB2066 /* UIView+Extension.swift */,
+				A0E0ED2B26061DA100AB2066 /* UIViewController+Extension.swift */,
+				A0E0ED2C26061DA100AB2066 /* UITextField+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0E0ED2D26061DA100AB2066 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				A0E0ED2F26061DA100AB2066 /* Constant.swift */,
+				A0E0ED3226061DA100AB2066 /* Language.swift */,
+				A0E0ED3F26061DA100AB2066 /* ActivityIndicator.swift */,
+				A0E0ED5026061DA100AB2066 /* CustomView */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		A0E0ED5026061DA100AB2066 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				A0E0ED5126061DA100AB2066 /* CustomView.swift */,
+				A0E0ED5226061DA100AB2066 /* CustomButton.swift */,
+				A0E0ED5326061DA100AB2066 /* ShadowViewimg.swift */,
+				A0E0ED5426061DA100AB2066 /* CustomTextField.swift */,
+				A0E0ED5526061DA100AB2066 /* CustomTextView.swift */,
+				A0E0ED5626061DA100AB2066 /* CustomLabel.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +170,7 @@
 				A0E0ECFA2606180800AB2066 /* Sources */,
 				A0E0ECFB2606180800AB2066 /* Frameworks */,
 				A0E0ECFC2606180800AB2066 /* Resources */,
+				653E88902E0440610C9CCF4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +226,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		653E88902E0440610C9CCF4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BellmanTask/Pods-BellmanTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BellmanTask/Pods-BellmanTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BellmanTask/Pods-BellmanTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A6A50C0CF446BAC57006D143 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,8 +272,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E0ED6026061DA100AB2066 /* UIViewController+Extension.swift in Sources */,
+				A0E0ED8326061DA100AB2066 /* CustomLabel.swift in Sources */,
+				A0E0ED6326061DA100AB2066 /* Constant.swift in Sources */,
+				A0E0ED6626061DA100AB2066 /* Language.swift in Sources */,
 				A0E0ED062606180800AB2066 /* ViewController.swift in Sources */,
+				A0E0ED5826061DA100AB2066 /* UIImageView+Extension.swift in Sources */,
+				A0E0ED8126061DA100AB2066 /* CustomTextField.swift in Sources */,
+				A0E0ED7F26061DA100AB2066 /* CustomButton.swift in Sources */,
+				A0E0ED5A26061DA100AB2066 /* UIColor+Extension.swift in Sources */,
+				A0E0ED6F26061DA100AB2066 /* ActivityIndicator.swift in Sources */,
 				A0E0ED022606180800AB2066 /* AppDelegate.swift in Sources */,
+				A0E0ED7E26061DA100AB2066 /* CustomView.swift in Sources */,
+				A0E0ED6126061DA100AB2066 /* UITextField+Extension.swift in Sources */,
+				A0E0ED5E26061DA100AB2066 /* UIView+Extension.swift in Sources */,
+				A0E0ED8226061DA100AB2066 /* CustomTextView.swift in Sources */,
+				A0E0ED8026061DA100AB2066 /* ShadowViewimg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
