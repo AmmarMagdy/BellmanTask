@@ -61,7 +61,7 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return itemSections.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return  1
@@ -94,7 +94,8 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let _ = cell as! HorizontalCollectionCell
+        let cell = cell as! HorizontalCollectionCell
+        cell.loadCellData(itemSections[indexPath.section])
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
