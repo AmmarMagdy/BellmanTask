@@ -41,10 +41,13 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: sectionHeaderIdentifier, for: indexPath) as! HomeHeaderReusableView
         switch itemSections[indexPath.section]{
         case .hotspots:
+            headerView.titleImageView.image = #imageLiteral(resourceName: "hotspot_icon")
             headerView.titleLabel.text = "Hotspots"
         case .events:
+            headerView.titleImageView.image = #imageLiteral(resourceName: "events_icon")
             headerView.titleLabel.text = "Events"
         case .attractions:
+            headerView.titleImageView.image = #imageLiteral(resourceName: "attarctions_icon")
             headerView.titleLabel.text = "Attractions"
         }
         return headerView

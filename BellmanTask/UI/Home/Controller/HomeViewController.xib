@@ -194,7 +194,7 @@
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lHR-rf-pdo">
-                            <rect key="frame" x="0.0" y="189.5" width="414" height="672.5"/>
+                            <rect key="frame" x="10" y="189.5" width="394" height="672.5"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MNk-vh-1Vf">
                                 <size key="itemSize" width="128" height="128"/>
@@ -216,8 +216,8 @@
                         <constraint firstAttribute="bottom" secondItem="lHR-rf-pdo" secondAttribute="bottom" id="RBD-Bb-aEe"/>
                         <constraint firstItem="TCH-Ow-BaH" firstAttribute="top" secondItem="UhW-Pz-3Hg" secondAttribute="top" id="XcF-a9-ZRL"/>
                         <constraint firstAttribute="trailing" secondItem="TCH-Ow-BaH" secondAttribute="trailing" id="dQE-iL-vyP"/>
-                        <constraint firstAttribute="trailing" secondItem="lHR-rf-pdo" secondAttribute="trailing" id="gUZ-hp-6UM"/>
-                        <constraint firstItem="lHR-rf-pdo" firstAttribute="leading" secondItem="UhW-Pz-3Hg" secondAttribute="leading" id="gaR-aC-jQJ"/>
+                        <constraint firstAttribute="trailing" secondItem="lHR-rf-pdo" secondAttribute="trailing" constant="10" id="gUZ-hp-6UM"/>
+                        <constraint firstItem="lHR-rf-pdo" firstAttribute="leading" secondItem="UhW-Pz-3Hg" secondAttribute="leading" constant="10" id="gaR-aC-jQJ"/>
                     </constraints>
                 </view>
             </subviews>

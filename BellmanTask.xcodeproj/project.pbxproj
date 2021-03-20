@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A0E0ED022606180800AB2066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED012606180800AB2066 /* AppDelegate.swift */; };
-		A0E0ED062606180800AB2066 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED052606180800AB2066 /* ViewController.swift */; };
 		A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0A2606180A00AB2066 /* Assets.xcassets */; };
 		A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0C2606180A00AB2066 /* LaunchScreen.storyboard */; };
 		A0E0ED5826061DA100AB2066 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED2326061DA100AB2066 /* UIImageView+Extension.swift */; };
@@ -39,7 +38,6 @@
 		48D25A8A650F6929BE9218BA /* Pods-BellmanTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellmanTask.release.xcconfig"; path = "Target Support Files/Pods-BellmanTask/Pods-BellmanTask.release.xcconfig"; sourceTree = "<group>"; };
 		A0E0ECFE2606180800AB2066 /* BellmanTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BellmanTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E0ED012606180800AB2066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0E0ED052606180800AB2066 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A0E0ED0A2606180A00AB2066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E0ED0D2606180A00AB2066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0E0ED0F2606180A00AB2066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				A0E0ED2D26061DA100AB2066 /* Utilis */,
 				A0E0ED2126061DA100AB2066 /* Extensions */,
 				A0E0ED012606180800AB2066 /* AppDelegate.swift */,
-				A0E0ED052606180800AB2066 /* ViewController.swift */,
 				A0E0ED0A2606180A00AB2066 /* Assets.xcassets */,
 				A0E0ED0C2606180A00AB2066 /* LaunchScreen.storyboard */,
 				A0E0ED0F2606180A00AB2066 /* Info.plist */,
@@ -339,7 +336,6 @@
 				A0E0ED6326061DA100AB2066 /* Constant.swift in Sources */,
 				A0E0EDAF260621E100AB2066 /* HomeViewController.swift in Sources */,
 				A0E0ED6626061DA100AB2066 /* Language.swift in Sources */,
-				A0E0ED062606180800AB2066 /* ViewController.swift in Sources */,
 				A0E0ED5826061DA100AB2066 /* UIImageView+Extension.swift in Sources */,
 				A0E0ED8126061DA100AB2066 /* CustomTextField.swift in Sources */,
 				A0E0ED7F26061DA100AB2066 /* CustomButton.swift in Sources */,
