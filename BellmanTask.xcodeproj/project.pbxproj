@@ -13,9 +13,12 @@
 		A0E0ED092606180800AB2066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED072606180800AB2066 /* Main.storyboard */; };
 		A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0A2606180A00AB2066 /* Assets.xcassets */; };
 		A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0C2606180A00AB2066 /* LaunchScreen.storyboard */; };
+		C8120D057ED7E856188A9FED /* Pods_BellmanTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		296BB479699C9413E21C2E95 /* Pods-BellmanTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellmanTask.debug.xcconfig"; path = "Target Support Files/Pods-BellmanTask/Pods-BellmanTask.debug.xcconfig"; sourceTree = "<group>"; };
+		48D25A8A650F6929BE9218BA /* Pods-BellmanTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellmanTask.release.xcconfig"; path = "Target Support Files/Pods-BellmanTask/Pods-BellmanTask.release.xcconfig"; sourceTree = "<group>"; };
 		A0E0ECFE2606180800AB2066 /* BellmanTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BellmanTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E0ED012606180800AB2066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0E0ED032606180800AB2066 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A0E0ED0A2606180A00AB2066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E0ED0D2606180A00AB2066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0E0ED0F2606180A00AB2066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellmanTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8120D057ED7E856188A9FED /* Pods_BellmanTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2481951644423E37A714C1A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				296BB479699C9413E21C2E95 /* Pods-BellmanTask.debug.xcconfig */,
+				48D25A8A650F6929BE9218BA /* Pods-BellmanTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F5A9E126A050D5504162066 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0E0ECF52606180800AB2066 = {
 			isa = PBXGroup;
 			children = (
 				A0E0ED002606180800AB2066 /* BellmanTask */,
 				A0E0ECFF2606180800AB2066 /* Products */,
+				2481951644423E37A714C1A8 /* Pods */,
+				3F5A9E126A050D5504162066 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0E0ED122606180A00AB2066 /* Build configuration list for PBXNativeTarget "BellmanTask" */;
 			buildPhases = (
+				A6A50C0CF446BAC57006D143 /* [CP] Check Pods Manifest.lock */,
 				A0E0ECFA2606180800AB2066 /* Sources */,
 				A0E0ECFB2606180800AB2066 /* Frameworks */,
 				A0E0ECFC2606180800AB2066 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6A50C0CF446BAC57006D143 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BellmanTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0E0ECFA2606180800AB2066 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		A0E0ED132606180A00AB2066 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296BB479699C9413E21C2E95 /* Pods-BellmanTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +353,7 @@
 		};
 		A0E0ED142606180A00AB2066 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D25A8A650F6929BE9218BA /* Pods-BellmanTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
