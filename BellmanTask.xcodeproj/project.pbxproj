@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0E0ED022606180800AB2066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED012606180800AB2066 /* AppDelegate.swift */; };
-		A0E0ED042606180800AB2066 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED032606180800AB2066 /* SceneDelegate.swift */; };
 		A0E0ED062606180800AB2066 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED052606180800AB2066 /* ViewController.swift */; };
-		A0E0ED092606180800AB2066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED072606180800AB2066 /* Main.storyboard */; };
 		A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0A2606180A00AB2066 /* Assets.xcassets */; };
 		A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E0ED0C2606180A00AB2066 /* LaunchScreen.storyboard */; };
 		C8120D057ED7E856188A9FED /* Pods_BellmanTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */; };
@@ -21,9 +19,7 @@
 		48D25A8A650F6929BE9218BA /* Pods-BellmanTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellmanTask.release.xcconfig"; path = "Target Support Files/Pods-BellmanTask/Pods-BellmanTask.release.xcconfig"; sourceTree = "<group>"; };
 		A0E0ECFE2606180800AB2066 /* BellmanTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BellmanTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E0ED012606180800AB2066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0E0ED032606180800AB2066 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A0E0ED052606180800AB2066 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0E0ED082606180800AB2066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0E0ED0A2606180A00AB2066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E0ED0D2606180A00AB2066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0E0ED0F2606180A00AB2066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +44,6 @@
 				296BB479699C9413E21C2E95 /* Pods-BellmanTask.debug.xcconfig */,
 				48D25A8A650F6929BE9218BA /* Pods-BellmanTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,9 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				A0E0ED012606180800AB2066 /* AppDelegate.swift */,
-				A0E0ED032606180800AB2066 /* SceneDelegate.swift */,
 				A0E0ED052606180800AB2066 /* ViewController.swift */,
-				A0E0ED072606180800AB2066 /* Main.storyboard */,
 				A0E0ED0A2606180A00AB2066 /* Assets.xcassets */,
 				A0E0ED0C2606180A00AB2066 /* LaunchScreen.storyboard */,
 				A0E0ED0F2606180A00AB2066 /* Info.plist */,
@@ -152,7 +145,6 @@
 			files = (
 				A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */,
 				A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */,
-				A0E0ED092606180800AB2066 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,21 +182,12 @@
 			files = (
 				A0E0ED062606180800AB2066 /* ViewController.swift in Sources */,
 				A0E0ED022606180800AB2066 /* AppDelegate.swift in Sources */,
-				A0E0ED042606180800AB2066 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0E0ED072606180800AB2066 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0E0ED082606180800AB2066 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0E0ED0C2606180A00AB2066 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -267,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BellmanTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ammar.BellmanTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BellmanTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ammar.BellmanTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
