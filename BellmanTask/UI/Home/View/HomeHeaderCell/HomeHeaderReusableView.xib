@@ -32,7 +32,7 @@
                                 <constraint firstAttribute="width" secondItem="26L-Dd-2Jv" secondAttribute="height" multiplier="1:1" id="w5Q-gJ-MnD"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHS-GJ-SnX" customClass="CustomLabel" customModule="BellmanTask" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHS-GJ-SnX" customClass="CustomLabel" customModule="BellmanTask" customModuleProvider="target">
                             <rect key="frame" x="40" y="0.0" width="174" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,11 +116,6 @@
             <point key="canvasLocation" x="139" y="137"/>
         </collectionReusableView>
     </objects>
-    <designables>
-        <designable name="pHS-GJ-SnX">
-            <size key="intrinsicContentSize" width="46" height="23"/>
-        </designable>
-    </designables>
     <resources>
         <image name="view_all_icon" width="14" height="14"/>
     </resources>

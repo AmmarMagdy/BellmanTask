@@ -9,6 +9,5 @@ target 'BellmanTask' do
   pod 'Alamofire'
   pod 'Kingfisher'
   pod 'SnapKit'
-  pod 'Material'
-
+  
 end

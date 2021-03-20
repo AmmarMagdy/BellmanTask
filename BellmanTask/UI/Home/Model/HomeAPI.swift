@@ -8,32 +8,32 @@
 import Foundation
 
 struct HomeAPI {
-
+    
     var data : APIData!
     var message : String!
     var statusCode : Int!
-
-
+    
+    
     /**
      * Instantiate the instance using the passed dictionary values to set the properties values
      */
     init(fromDictionary dictionary: [String:Any]){
         if let dataData = dictionary["data"] as? [String:Any]{
-                data = APIData(fromDictionary: dataData)
-            }
+            data = APIData(fromDictionary: dataData)
+        }
         message = dictionary["message"] as? String
         statusCode = dictionary["status_code"] as? Int
     }
-
+    
 }
 
-struct APIData{
-
+struct APIData {
+    
     var attractions : [Data]!
     var events : [Data]!
     var hotSpots : [Data]!
-
-
+    
+    
     /**
      * Instantiate the instance using the passed dictionary values to set the properties values
      */
@@ -63,11 +63,11 @@ struct APIData{
 }
 
 struct Data: CellData {
-        
+    
     var descriptionField: String!
     var name: String!
     var photos : [String]! 
-  
+    
     init(fromDictionary dictionary: [String:Any]){
         descriptionField = dictionary["description"] as? String
         name = dictionary["name"] as? String

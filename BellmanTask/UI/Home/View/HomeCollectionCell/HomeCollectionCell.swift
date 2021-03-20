@@ -8,14 +8,14 @@
 import UIKit
 
 protocol CellData {
-
+    
     var descriptionField: String! {get}
     var name: String! {get}
     var photos : [String]! {get}
 }
 
 class HomeCollectionCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -24,7 +24,6 @@ class HomeCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
     
     func loadCellData(_ model: CellData) {
         if let photos = model.photos {
@@ -35,5 +34,4 @@ class HomeCollectionCell: UICollectionViewCell {
         nameLabel.text = model.name
         descriptionLabel.text = model.descriptionField
     }
-
 }

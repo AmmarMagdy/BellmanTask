@@ -7,24 +7,25 @@
 
 import UIKit
 
-enum itemSections {
+enum ItemSections {
     case hotspots
     case events
     case attractions
 }
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     private let categoryCellIdentifier = "categoryCellIdentifier"
     private let sectionHeaderIdentifier = "sectionHeaderIdentifier"
-    var itemSections : [itemSections] = [.hotspots, .events, .attractions]
+    var itemSections : [ItemSections] = [.hotspots, .events, .attractions]
     var data: APIData!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRegisterCollectionView()
+        getHome()
     }
     
     func setupRegisterCollectionView() {
@@ -32,7 +33,7 @@ class HomeViewController: UIViewController {
         let nib = UINib(nibName: "HorizontalCollectionCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: categoryCellIdentifier)
     }
-
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
@@ -63,7 +64,7 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return data != nil ? itemSections.count : 0
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data != nil ? 1 : 0
     }
@@ -95,39 +96,59 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let cell = cell as! HorizontalCollectionCell
         switch itemSections[indexPath.section] {
-      
+        
         case .hotspots:
             cell.loadCellData(itemSections[indexPath.section], data.hotSpots)
-
+            
         case .events:
             cell.loadCellData(itemSections[indexPath.section], data.events)
-
+            
         case .attractions:
             cell.loadCellData(itemSections[indexPath.section], data.attractions)
-
+            
         }
     }
 }
 
 extension HomeViewController {
-
-    func getTopSeller() {
-        let params = ["Start": 0,
-                      "Length": 6,
-                      "TopSeller": "true"] as [String : Any]
-        
+    
+    func getHome() {
         ActivityIndicator.instance.show(self.view)
-        Request.requestAPI(router: .getProducts(params), callbackSuccess: { [weak self] (result) in
-            self?.topSellers = ProductsAPI(fromDictionary: result["result"] as! [String: Any]).products
-            self?.isNullOrEmpty(.topSeller, self?.topSellers)
+        Request.requestAPI(router: .getHome, callbackSuccess: { [weak self] (result) in
+            guard let self = self else {return}
+            self.data = HomeAPI(fromDictionary: result).data
+            self.checkEmptyModel()
         }, callbackFail: { (statusCode, message) in
-            AppAlert.instance.showAPIErrorMessage(statusCode, message, self)
+            //AppAlert.instance.showAPIErrorMessage(statusCode, message, self)
         }) { (result) in
             print(result)
         }
     }
     
-
+    func checkEmptyModel() {
+        guard let _ = data else {return}
+        if self.isNullOrEmpty(self.data.hotSpots) {
+            removeEmptySection(.hotspots)
+        }
+        
+        if self.isNullOrEmpty(self.data.events) {
+            removeEmptySection(.events)
+        }
+        if self.isNullOrEmpty(self.data.attractions) {
+            removeEmptySection(.attractions)
+        }
+        collectionView.reloadData()
+        collectionView.layoutSubviews()
+    }
+    
+    func removeEmptySection(_ section: ItemSections) {
+        for (index,type) in itemSections.enumerated() {
+            if type == section {
+                itemSections.remove(at: index)
+                break
+            }
+        }
+    }
 }
 
 

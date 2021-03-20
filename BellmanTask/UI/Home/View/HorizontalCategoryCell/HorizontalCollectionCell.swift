@@ -11,11 +11,12 @@ class HorizontalCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let hotspotsCellIdentifier = "hotspotsCellIdentifier"
-    private let eventsCellIdentifier = "eventsCellIdentifier"
-
-    var section: itemSections!
-    var data: [Data]!
+    private let homeCellIdentifier = "homeCellIdentifier"
+    
+    var section: ItemSections!
+    var hotspotsData: [Data]!
+    var eventsData: [Data]!
+    var attractionsData: [Data]!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,16 +24,23 @@ class HorizontalCollectionCell: UICollectionViewCell {
         
     }
     
-    func loadCellData(_ section: itemSections, _ data: [Data]) {
+    func loadCellData(_ section: ItemSections, _ data: [Data]) {
         self.section = section
-        self.data = data
+        guard let section = self.section else { return }
+        switch section {
+        case .hotspots:
+            hotspotsData = data
+        case .events:
+            eventsData = data
+        case .attractions:
+            attractionsData = data
+        }
+        self.collectionView.reloadData()
     }
     
     func registerCollectionViewCell() {
         let nib = UINib(nibName: "HomeCollectionCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: hotspotsCellIdentifier)
-        let nib1 = UINib(nibName: "EventsCollectionCell", bundle: nil)
-        collectionView.register(nib1, forCellWithReuseIdentifier: eventsCellIdentifier)
+        collectionView.register(nib, forCellWithReuseIdentifier: homeCellIdentifier)
     }
     
 }
@@ -44,17 +52,15 @@ extension HorizontalCollectionCell: UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        if let homeSection = self.section {
-//            switch homeSection {
-//            case .hotspots:
-//                return itemSections.count
-//            case .events:
-//                return itemSections.count
-//            case .attractions:
-//                return itemSections.count
-//            }
-//        }
-        return data != nil ? data.count : 0
+        guard let section = self.section else { return 0 }
+        switch section {
+        case .hotspots:
+            return hotspotsData != nil ? hotspotsData.count : 0
+        case .events:
+            return eventsData != nil ? eventsData.count : 0
+        case .attractions:
+            return attractionsData != nil ? attractionsData.count : 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -70,34 +76,24 @@ extension HorizontalCollectionCell: UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        switch section {
-        case .hotspots:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: hotspotsCellIdentifier, for: indexPath)
-            return cell
-        case .events:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: eventsCellIdentifier, for: indexPath)
-            return cell
-        case .attractions:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: hotspotsCellIdentifier, for: indexPath)
-            return cell
-        default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: hotspotsCellIdentifier, for: indexPath)
-            return cell
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeCellIdentifier, for: indexPath)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let cell = cell as! HomeCollectionCell
-        cell.loadCellData(data[indexPath.row])
-//        guard let section = section else { return }
-//        switch section {
-//
-//        case .hotspots:
-//            <#code#>
-//        case .events:
-//            <#code#>
-//        case .attractions:
-//            <#code#>
-//        }
+        guard let section = section else { return }
+        switch section {
+        
+        case .hotspots:
+            cell.loadCellData(hotspotsData[indexPath.row])
+            
+        case .events:
+            cell.loadCellData(eventsData[indexPath.row])
+            
+        case .attractions:
+            cell.loadCellData(attractionsData[indexPath.row])
+            
+        }
     }
 }
