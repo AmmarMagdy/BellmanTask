@@ -25,6 +25,8 @@
 		A0E0ED8126061DA100AB2066 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5426061DA100AB2066 /* CustomTextField.swift */; };
 		A0E0ED8226061DA100AB2066 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5526061DA100AB2066 /* CustomTextView.swift */; };
 		A0E0ED8326061DA100AB2066 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0ED5626061DA100AB2066 /* CustomLabel.swift */; };
+		A0E0EDAF260621E100AB2066 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDAD260621E100AB2066 /* HomeViewController.swift */; };
+		A0E0EDB0260621E100AB2066 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDAE260621E100AB2066 /* HomeViewController.xib */; };
 		C8120D057ED7E856188A9FED /* Pods_BellmanTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		A0E0ED5426061DA100AB2066 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A0E0ED5526061DA100AB2066 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		A0E0ED5626061DA100AB2066 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		A0E0EDAD260621E100AB2066 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A0E0EDAE260621E100AB2066 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellmanTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,7 @@
 		A0E0ED1F26061D1E00AB2066 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A0E0EDAC260621CC00AB2066 /* Home */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -157,6 +162,23 @@
 				A0E0ED5626061DA100AB2066 /* CustomLabel.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		A0E0EDAC260621CC00AB2066 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A0E0EDB2260621EA00AB2066 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A0E0EDB2260621EA00AB2066 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0E0EDAD260621E100AB2066 /* HomeViewController.swift */,
+				A0E0EDAE260621E100AB2066 /* HomeViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +242,7 @@
 			files = (
 				A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */,
 				A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */,
+				A0E0EDB0260621E100AB2066 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +298,7 @@
 				A0E0ED6026061DA100AB2066 /* UIViewController+Extension.swift in Sources */,
 				A0E0ED8326061DA100AB2066 /* CustomLabel.swift in Sources */,
 				A0E0ED6326061DA100AB2066 /* Constant.swift in Sources */,
+				A0E0EDAF260621E100AB2066 /* HomeViewController.swift in Sources */,
 				A0E0ED6626061DA100AB2066 /* Language.swift in Sources */,
 				A0E0ED062606180800AB2066 /* ViewController.swift in Sources */,
 				A0E0ED5826061DA100AB2066 /* UIImageView+Extension.swift in Sources */,
