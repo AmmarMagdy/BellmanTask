@@ -30,10 +30,8 @@
 		A0E0EDBF26062CC100AB2066 /* HorizontalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDBD26062CC100AB2066 /* HorizontalCollectionCell.xib */; };
 		A0E0EDC726062EE900AB2066 /* HomeHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDC526062EE900AB2066 /* HomeHeaderReusableView.xib */; };
 		A0E0EDC826062EE900AB2066 /* HomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDC626062EE900AB2066 /* HomeHeaderReusableView.swift */; };
-		A0E0EDF126066C9F00AB2066 /* EventsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDEF26066C9F00AB2066 /* EventsCollectionCell.swift */; };
-		A0E0EDF226066C9F00AB2066 /* EventsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDF026066C9F00AB2066 /* EventsCollectionCell.xib */; };
-		A0E0EDF726066CC600AB2066 /* HotspotsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDF526066CC600AB2066 /* HotspotsCollectionCell.swift */; };
-		A0E0EDF826066CC600AB2066 /* HotspotsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDF626066CC600AB2066 /* HotspotsCollectionCell.xib */; };
+		A0E0EDF726066CC600AB2066 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDF526066CC600AB2066 /* HomeCollectionCell.swift */; };
+		A0E0EDF826066CC600AB2066 /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDF626066CC600AB2066 /* HomeCollectionCell.xib */; };
 		A0E0EDFD26066D0E00AB2066 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDFC26066D0E00AB2066 /* HomeAPI.swift */; };
 		C8120D057ED7E856188A9FED /* Pods_BellmanTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */; };
 /* End PBXBuildFile section */
@@ -66,10 +64,8 @@
 		A0E0EDBD26062CC100AB2066 /* HorizontalCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalCollectionCell.xib; sourceTree = "<group>"; };
 		A0E0EDC526062EE900AB2066 /* HomeHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderReusableView.xib; sourceTree = "<group>"; };
 		A0E0EDC626062EE900AB2066 /* HomeHeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableView.swift; sourceTree = "<group>"; };
-		A0E0EDEF26066C9F00AB2066 /* EventsCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCollectionCell.swift; sourceTree = "<group>"; };
-		A0E0EDF026066C9F00AB2066 /* EventsCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsCollectionCell.xib; sourceTree = "<group>"; };
-		A0E0EDF526066CC600AB2066 /* HotspotsCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotsCollectionCell.swift; sourceTree = "<group>"; };
-		A0E0EDF626066CC600AB2066 /* HotspotsCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotspotsCollectionCell.xib; sourceTree = "<group>"; };
+		A0E0EDF526066CC600AB2066 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		A0E0EDF626066CC600AB2066 /* HomeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
 		A0E0EDFC26066D0E00AB2066 /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
 		ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellmanTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -203,8 +199,7 @@
 			children = (
 				A0E0EDC426062EE900AB2066 /* HomeHeaderCell */,
 				A0E0EDC226062EA700AB2066 /* HorizontalCategoryCell */,
-				A0E0EDF426066CC600AB2066 /* HotspotsCollectionCell */,
-				A0E0EDEE26066C9F00AB2066 /* EventsCollectionCell */,
+				A0E0EDF426066CC600AB2066 /* HomeCollectionCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,22 +222,13 @@
 			path = HomeHeaderCell;
 			sourceTree = "<group>";
 		};
-		A0E0EDEE26066C9F00AB2066 /* EventsCollectionCell */ = {
+		A0E0EDF426066CC600AB2066 /* HomeCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
-				A0E0EDEF26066C9F00AB2066 /* EventsCollectionCell.swift */,
-				A0E0EDF026066C9F00AB2066 /* EventsCollectionCell.xib */,
+				A0E0EDF526066CC600AB2066 /* HomeCollectionCell.swift */,
+				A0E0EDF626066CC600AB2066 /* HomeCollectionCell.xib */,
 			);
-			path = EventsCollectionCell;
-			sourceTree = "<group>";
-		};
-		A0E0EDF426066CC600AB2066 /* HotspotsCollectionCell */ = {
-			isa = PBXGroup;
-			children = (
-				A0E0EDF526066CC600AB2066 /* HotspotsCollectionCell.swift */,
-				A0E0EDF626066CC600AB2066 /* HotspotsCollectionCell.xib */,
-			);
-			path = HotspotsCollectionCell;
+			path = HomeCollectionCell;
 			sourceTree = "<group>";
 		};
 		A0E0EDFB26066CF700AB2066 /* Model */ = {
@@ -312,8 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E0EDF826066CC600AB2066 /* HotspotsCollectionCell.xib in Resources */,
-				A0E0EDF226066C9F00AB2066 /* EventsCollectionCell.xib in Resources */,
+				A0E0EDF826066CC600AB2066 /* HomeCollectionCell.xib in Resources */,
 				A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */,
 				A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */,
 				A0E0EDC726062EE900AB2066 /* HomeHeaderReusableView.xib in Resources */,
@@ -371,10 +356,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E0EDF126066C9F00AB2066 /* EventsCollectionCell.swift in Sources */,
 				A0E0ED6026061DA100AB2066 /* UIViewController+Extension.swift in Sources */,
 				A0E0EDC826062EE900AB2066 /* HomeHeaderReusableView.swift in Sources */,
-				A0E0EDF726066CC600AB2066 /* HotspotsCollectionCell.swift in Sources */,
+				A0E0EDF726066CC600AB2066 /* HomeCollectionCell.swift in Sources */,
 				A0E0ED8326061DA100AB2066 /* CustomLabel.swift in Sources */,
 				A0E0ED6326061DA100AB2066 /* Constant.swift in Sources */,
 				A0E0EDAF260621E100AB2066 /* HomeViewController.swift in Sources */,

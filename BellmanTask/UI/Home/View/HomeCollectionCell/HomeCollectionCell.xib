@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hotspotsCellIdentifier" id="gTV-IL-0wX" customClass="HotspotsCollectionCell" customModule="BellmanTask" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hotspotsCellIdentifier" id="gTV-IL-0wX" customClass="HomeCollectionCell" customModule="BellmanTask" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="237" height="270"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -76,6 +76,11 @@
                 <constraint firstAttribute="trailing" secondItem="UFR-oe-ZQ5" secondAttribute="trailing" id="wac-gN-IOJ"/>
             </constraints>
             <size key="customSize" width="237" height="270"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="geB-Ik-Fmu" id="mb0-Kt-fAU"/>
+                <outlet property="imageView" destination="7n4-bX-CFu" id="BSr-uT-pDS"/>
+                <outlet property="nameLabel" destination="9U0-VR-G3q" id="7t3-h6-LfP"/>
+            </connections>
             <point key="canvasLocation" x="273.1884057971015" y="168.08035714285714"/>
         </collectionViewCell>
     </objects>

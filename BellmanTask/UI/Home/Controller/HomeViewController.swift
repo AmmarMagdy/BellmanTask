@@ -20,7 +20,8 @@ class HomeViewController: UIViewController {
     private let categoryCellIdentifier = "categoryCellIdentifier"
     private let sectionHeaderIdentifier = "sectionHeaderIdentifier"
     var itemSections : [itemSections] = [.hotspots, .events, .attractions]
-
+    var data: APIData!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRegisterCollectionView()
@@ -59,12 +60,12 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         return CGSize(width: width, height: height)
     }
     
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return itemSections.count
+        return data != nil ? itemSections.count : 0
     }
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  1
+        return data != nil ? 1 : 0
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -82,9 +83,7 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         
         let width  = collectionView.bounds.width
         let height = view.bounds.height
-        
         return CGSize.init(width: width * 0.95, height: height * 0.28)
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -95,11 +94,18 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let cell = cell as! HorizontalCollectionCell
-        cell.loadCellData(itemSections[indexPath.section])
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        switch itemSections[indexPath.section] {
+      
+        case .hotspots:
+            cell.loadCellData(itemSections[indexPath.section], data.hotSpots)
+
+        case .events:
+            cell.loadCellData(itemSections[indexPath.section], data.events)
+
+        case .attractions:
+            cell.loadCellData(itemSections[indexPath.section], data.attractions)
+
+        }
     }
 }
 

@@ -13,8 +13,9 @@ class HorizontalCollectionCell: UICollectionViewCell {
     
     private let hotspotsCellIdentifier = "hotspotsCellIdentifier"
     private let eventsCellIdentifier = "eventsCellIdentifier"
-    var itemSections : [itemSections] = [.hotspots, .events, .attractions]
+
     var section: itemSections!
+    var data: [Data]!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,12 +23,13 @@ class HorizontalCollectionCell: UICollectionViewCell {
         
     }
     
-    func loadCellData(_ section: itemSections) {
+    func loadCellData(_ section: itemSections, _ data: [Data]) {
         self.section = section
+        self.data = data
     }
     
     func registerCollectionViewCell() {
-        let nib = UINib(nibName: "HotspotsCollectionCell", bundle: nil)
+        let nib = UINib(nibName: "HomeCollectionCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: hotspotsCellIdentifier)
         let nib1 = UINib(nibName: "EventsCollectionCell", bundle: nil)
         collectionView.register(nib1, forCellWithReuseIdentifier: eventsCellIdentifier)
@@ -42,17 +44,17 @@ extension HorizontalCollectionCell: UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let homeSection = self.section {
-            switch homeSection {
-            case .hotspots:
-                return itemSections.count
-            case .events:
-                return itemSections.count
-            case .attractions:
-                return itemSections.count
-            }
-        }
-        return 1
+//        if let homeSection = self.section {
+//            switch homeSection {
+//            case .hotspots:
+//                return itemSections.count
+//            case .events:
+//                return itemSections.count
+//            case .attractions:
+//                return itemSections.count
+//            }
+//        }
+        return data != nil ? data.count : 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -85,15 +87,17 @@ extension HorizontalCollectionCell: UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        switch section {
-        case .hotspots:
-            let _ = cell as! HotspotsCollectionCell
-        case .events:
-            let _ = cell as! EventsCollectionCell
-        case .attractions:
-            let _ = cell as! HotspotsCollectionCell
-        default:
-            print("")
-        }
+        let cell = cell as! HomeCollectionCell
+        cell.loadCellData(data[indexPath.row])
+//        guard let section = section else { return }
+//        switch section {
+//
+//        case .hotspots:
+//            <#code#>
+//        case .events:
+//            <#code#>
+//        case .attractions:
+//            <#code#>
+//        }
     }
 }
