@@ -9,6 +9,8 @@ import UIKit
 
 class HorizontalCollectionCell: UICollectionViewCell {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

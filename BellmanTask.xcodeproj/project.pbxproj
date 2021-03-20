@@ -30,6 +30,8 @@
 		A0E0EDBF26062CC100AB2066 /* HorizontalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDBD26062CC100AB2066 /* HorizontalCollectionCell.xib */; };
 		A0E0EDC726062EE900AB2066 /* HomeHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDC526062EE900AB2066 /* HomeHeaderReusableView.xib */; };
 		A0E0EDC826062EE900AB2066 /* HomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDC626062EE900AB2066 /* HomeHeaderReusableView.swift */; };
+		A0E0EDD1260654AA00AB2066 /* HotspotsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E0EDCF260654AA00AB2066 /* HotspotsCollectionCell.swift */; };
+		A0E0EDD2260654AA00AB2066 /* HotspotsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EDD0260654AA00AB2066 /* HotspotsCollectionCell.xib */; };
 		C8120D057ED7E856188A9FED /* Pods_BellmanTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		A0E0EDBD26062CC100AB2066 /* HorizontalCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalCollectionCell.xib; sourceTree = "<group>"; };
 		A0E0EDC526062EE900AB2066 /* HomeHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderReusableView.xib; sourceTree = "<group>"; };
 		A0E0EDC626062EE900AB2066 /* HomeHeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableView.swift; sourceTree = "<group>"; };
+		A0E0EDCF260654AA00AB2066 /* HotspotsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotsCollectionCell.swift; sourceTree = "<group>"; };
+		A0E0EDD0260654AA00AB2066 /* HotspotsCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotspotsCollectionCell.xib; sourceTree = "<group>"; };
 		ECDFDE784F11F87A275A9E2D /* Pods_BellmanTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellmanTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,19 +194,20 @@
 		A0E0EDBA26062CA400AB2066 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0E0EDC226062EA700AB2066 /* HorizontalCategoryCell */,
 				A0E0EDC426062EE900AB2066 /* HomeHeaderCell */,
-				A0E0EDC226062EA700AB2066 /* horizontalCategoryCell */,
+				A0E0EDCC2606546100AB2066 /* HotspotsCollectionCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		A0E0EDC226062EA700AB2066 /* horizontalCategoryCell */ = {
+		A0E0EDC226062EA700AB2066 /* HorizontalCategoryCell */ = {
 			isa = PBXGroup;
 			children = (
 				A0E0EDBC26062CC100AB2066 /* HorizontalCollectionCell.swift */,
 				A0E0EDBD26062CC100AB2066 /* HorizontalCollectionCell.xib */,
 			);
-			path = horizontalCategoryCell;
+			path = HorizontalCategoryCell;
 			sourceTree = "<group>";
 		};
 		A0E0EDC426062EE900AB2066 /* HomeHeaderCell */ = {
@@ -212,6 +217,15 @@
 				A0E0EDC526062EE900AB2066 /* HomeHeaderReusableView.xib */,
 			);
 			path = HomeHeaderCell;
+			sourceTree = "<group>";
+		};
+		A0E0EDCC2606546100AB2066 /* HotspotsCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				A0E0EDCF260654AA00AB2066 /* HotspotsCollectionCell.swift */,
+				A0E0EDD0260654AA00AB2066 /* HotspotsCollectionCell.xib */,
+			);
+			path = HotspotsCollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E0ED0E2606180A00AB2066 /* LaunchScreen.storyboard in Resources */,
+				A0E0EDD2260654AA00AB2066 /* HotspotsCollectionCell.xib in Resources */,
 				A0E0ED0B2606180A00AB2066 /* Assets.xcassets in Resources */,
 				A0E0EDC726062EE900AB2066 /* HomeHeaderReusableView.xib in Resources */,
 				A0E0EDB0260621E100AB2066 /* HomeViewController.xib in Resources */,
@@ -340,6 +355,7 @@
 				A0E0ED8126061DA100AB2066 /* CustomTextField.swift in Sources */,
 				A0E0ED7F26061DA100AB2066 /* CustomButton.swift in Sources */,
 				A0E0ED5A26061DA100AB2066 /* UIColor+Extension.swift in Sources */,
+				A0E0EDD1260654AA00AB2066 /* HotspotsCollectionCell.swift in Sources */,
 				A0E0ED6F26061DA100AB2066 /* ActivityIndicator.swift in Sources */,
 				A0E0ED022606180800AB2066 /* AppDelegate.swift in Sources */,
 				A0E0ED7E26061DA100AB2066 /* CustomView.swift in Sources */,
