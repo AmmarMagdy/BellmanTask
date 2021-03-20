@@ -121,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A0E0ED1F26061D1E00AB2066 /* UI */,
+				A0E0EE0426067B4600AB2066 /* Network */,
 				A0E0ED2D26061DA100AB2066 /* Utilis */,
 				A0E0ED2126061DA100AB2066 /* Extensions */,
 				A0E0ED012606180800AB2066 /* AppDelegate.swift */,
@@ -237,6 +238,13 @@
 				A0E0EDFC26066D0E00AB2066 /* HomeAPI.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A0E0EE0426067B4600AB2066 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

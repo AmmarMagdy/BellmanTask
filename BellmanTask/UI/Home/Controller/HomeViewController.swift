@@ -109,3 +109,25 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
     }
 }
 
+extension HomeViewController {
+
+    func getTopSeller() {
+        let params = ["Start": 0,
+                      "Length": 6,
+                      "TopSeller": "true"] as [String : Any]
+        
+        ActivityIndicator.instance.show(self.view)
+        Request.requestAPI(router: .getProducts(params), callbackSuccess: { [weak self] (result) in
+            self?.topSellers = ProductsAPI(fromDictionary: result["result"] as! [String: Any]).products
+            self?.isNullOrEmpty(.topSeller, self?.topSellers)
+        }, callbackFail: { (statusCode, message) in
+            AppAlert.instance.showAPIErrorMessage(statusCode, message, self)
+        }) { (result) in
+            print(result)
+        }
+    }
+    
+
+}
+
+
